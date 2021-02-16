@@ -1,0 +1,88 @@
+<!--
+Software Engineering HW3
+Author: Phuocan Nguyen
+Date: February 15, 2021
+-->
+
+<!DOCTYPE html>
+<html>
+
+<!-- Head and Title -->
+<head>
+    <title>Cheesecake Order Form</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src=" javascripts/cheesecakejs.js"></script>
+
+</head>
+
+<body>
+
+<!-- Title and Image -->
+<h1><b>Cheesecake Order Form</b></h1>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/
+9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg"
+     alt="Wikimedia Cheesecake" style="width:200px;height:200px;">
+
+<!-- Radio button and dropdown list -->
+<p id="quantityTopping">Quantity Topping</p>
+<table cellspacing="15" cellpadding="0">
+    <tr>
+        <td>
+            <select name="quantity" id="quantity">
+                <option value="three">3</option>
+                <option value="two">2</option>
+                <option value="one">1</option>
+            </select>
+        </td>
+        <td>
+            <form id="flavorForm">
+                <input type="radio" id="plain" name="flavor" value="Plain">
+                <label for="plain">plain</label><br>
+                <input type="radio" id="cherry" name="flavor" value="Cherry">
+                <label for="cherry">cherry</label><br>
+                <input type="radio" id="chocolate" name="flavor" value="Chocolate">
+                <label for="chocolate">chocolate</label>
+            </form>
+        </td>
+    </tr>
+</table>
+
+<!-- Text box -->
+<p id="notes">Notes:</p>
+<textarea placeholder="Enter any special instructions here" rows="4" cols="50" id="textnotes"></textarea>
+
+
+<br>
+<button id="orderbtn">Order</button>
+
+<!-- Dropdown list -->
+<h3>Orders for
+    <div class="dropdown">
+        <button class="dropbtn" id="dropbtn">Month</button>
+        <div class="dropdown-content" id="dropdown">
+            <!-- all months of the year -->
+            <a href="#" id="janbtn">January</a>
+            <a href="#" id="febbtn">February</a>
+            <a href="#" id="marbtn">March</a>
+            <a href="#" id="aprbtn">April</a>
+            <a href="#" id="maybtn">May</a>
+            <a href="#" id="junbtn">June</a>
+            <a href="#" id="julbtn">July</a>
+            <a href="#" id="augbtn">August</a>
+            <a href="#" id="sepbtn">September</a>
+            <a href="#" id="novbtn">November</a>
+            <a href="#" id="decbtn">December</a>
+        </div>
+    </div>
+</h3>
+
+<!-- Previous Orders list -->
+<ul>
+    <li>11 cherry</li>
+    <li>17 chocolate</li>
+    <li>31 plain</li>
+</ul>
+
+</body>
+</html>
